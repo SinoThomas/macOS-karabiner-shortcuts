@@ -30,6 +30,9 @@
 						"modifiers": {
 							"mandatory": [
 								"fn"
+							],
+							"optional": [
+								"any"
 							]
 						}
 					},
@@ -51,6 +54,9 @@
 						"modifiers": {
 							"mandatory": [
 								"fn"
+							],
+							"optional": [
+								"any"
 							]
 						}
 					},
@@ -72,6 +78,9 @@
 						"modifiers": {
 							"mandatory": [
 								"fn"
+							],
+							"optional": [
+								"any"
 							]
 						}
 					},
@@ -88,6 +97,9 @@
 						"modifiers": {
 							"mandatory": [
 								"fn"
+							],
+							"optional": [
+								"any"
 							]
 						}
 					},
@@ -104,6 +116,9 @@
 						"modifiers": {
 							"mandatory": [
 								"fn"
+							],
+							"optional": [
+								"any"
 							]
 						}
 					},
@@ -120,6 +135,9 @@
 						"modifiers": {
 							"mandatory": [
 								"fn"
+							],
+							"optional": [
+								"any"
 							]
 						}
 					},
@@ -141,6 +159,9 @@
 						"modifiers": {
 							"mandatory": [
 								"fn"
+							],
+							"optional": [
+								"any"
 							]
 						}
 					},
@@ -160,6 +181,9 @@
 						"modifiers": {
 							"mandatory": [
 								"fn"
+							],
+							"optional": [
+								"any"
 							]
 						}
 					},
@@ -184,6 +208,9 @@
 						"modifiers": {
 							"mandatory": [
 								"fn"
+							],
+							"optional": [
+								"any"
 							]
 						}
 					},
@@ -203,6 +230,9 @@
 						"modifiers": {
 							"mandatory": [
 								"fn"
+							],
+							"optional": [
+								"any"
 							]
 						}
 					},
@@ -227,6 +257,9 @@
 						"modifiers": {
 							"mandatory": [
 								"fn"
+							],
+							"optional": [
+								"any"
 							]
 						}
 					},
@@ -256,6 +289,9 @@
 						"modifiers": {
 							"mandatory": [
 								"fn"
+							],
+							"optional": [
+								"any"
 							]
 						}
 					},
@@ -279,6 +315,9 @@
 						"modifiers": {
 							"mandatory": [
 								"fn"
+							],
+							"optional": [
+								"any"
 							]
 						}
 					},
@@ -298,7 +337,7 @@
 			]
 		},
 		{
-			"description": "fn + f     to     Open Finder",
+			"description": "fn + F     to     Open Finder",
 			"manipulators": [
 				{
 					"type": "basic",
@@ -319,7 +358,7 @@
 			]
 		},
 		{
-			"description": "fn + f     to     Open Terminal",
+			"description": "fn + T     to     Open Terminal",
 			"manipulators": [
 				{
 					"type": "basic",
