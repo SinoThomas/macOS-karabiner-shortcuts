@@ -69,8 +69,31 @@
 			]
 		},
 		{
-			"description": "fn + JKIL  to     Arrow Keys",
+			"description": "fn + JKIL  to     Arrow Keys with Cmd as Shift",
 			"manipulators": [
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "j",
+						"modifiers": {
+							"mandatory": [
+								"fn",
+								"command"
+							],
+							"optional": [
+								"any"
+							]
+						}
+					},
+					"to": [
+						{
+							"key_code": "left_arrow",
+							"modifiers": [
+								"left_shift"
+							]
+						}
+					]
+				},
 				{
 					"type": "basic",
 					"from": {
@@ -87,6 +110,29 @@
 					"to": [
 						{
 							"key_code": "left_arrow"
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "k",
+						"modifiers": {
+							"mandatory": [
+								"fn",
+								"command"
+							],
+							"optional": [
+								"any"
+							]
+						}
+					},
+					"to": [
+						{
+							"key_code": "down_arrow",
+							"modifiers": [
+								"left_shift"
+							]
 						}
 					]
 				},
@@ -115,6 +161,29 @@
 						"key_code": "i",
 						"modifiers": {
 							"mandatory": [
+								"fn",
+								"command"
+							],
+							"optional": [
+								"any"
+							]
+						}
+					},
+					"to": [
+						{
+							"key_code": "up_arrow",
+							"modifiers": [
+								"left_shift"
+							]
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "i",
+						"modifiers": {
+							"mandatory": [
 								"fn"
 							],
 							"optional": [
@@ -125,6 +194,29 @@
 					"to": [
 						{
 							"key_code": "up_arrow"
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "l",
+						"modifiers": {
+							"mandatory": [
+								"fn",
+								"command"
+							],
+							"optional": [
+								"any"
+							]
+						}
+					},
+					"to": [
+						{
+							"key_code": "right_arrow",
+							"modifiers": [
+								"left_shift"
+							]
 						}
 					]
 				},
@@ -150,8 +242,31 @@
 			]
 		},
 		{
-			"description": "fn + H;    to     Move cursor by word left, right",
+			"description": "fn + H;    to     Move cursor by word left, right with Cmd as Shift",
 			"manipulators": [
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "h",
+						"modifiers": {
+							"mandatory": [
+								"fn",
+								"command"
+							],
+							"optional": [
+								"any"
+							]
+						}
+					},
+					"to": [
+						{
+							"key_code": "left_arrow",
+							"modifiers": [
+								"left_alt","left_shift"
+							]
+						}
+					]
+				},
 				{
 					"type": "basic",
 					"from": {
@@ -170,6 +285,29 @@
 							"key_code": "left_arrow",
 							"modifiers": [
 								"left_alt"
+							]
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "semicolon",
+						"modifiers": {
+							"mandatory": [
+								"fn",
+								"command"
+							],
+							"optional": [
+								"any"
+							]
+						}
+					},
+					"to": [
+						{
+							"key_code": "right_arrow",
+							"modifiers": [
+								"left_alt","left_shift"
 							]
 						}
 					]
@@ -199,8 +337,32 @@
 			]
 		},
 		{
-			"description": "fn + UO    to     Move to line Start, End",
+			"description": "fn + UO    to     Move to line Start, End with Cmd as Shift",
 			"manipulators": [
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "u",
+						"modifiers": {
+							"mandatory": [
+								"fn",
+								"command"
+							],
+							"optional": [
+								"any"
+							]
+						}
+					},
+					"to": [
+						{
+							"key_code": "left_arrow",
+							"modifiers": [
+								"command",
+								"left_shift"
+							]
+						}
+					]
+				},
 				{
 					"type": "basic",
 					"from": {
@@ -219,6 +381,30 @@
 							"key_code": "left_arrow",
 							"modifiers": [
 								"command"
+							]
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "o",
+						"modifiers": {
+							"mandatory": [
+								"fn",
+								"command"
+							],
+							"optional": [
+								"any"
+							]
+						}
+					},
+					"to": [
+						{
+							"key_code": "right_arrow",
+							"modifiers": [
+								"command",
+								"left_shift"
 							]
 						}
 					]
