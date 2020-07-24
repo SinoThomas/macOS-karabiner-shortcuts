@@ -150,6 +150,55 @@
 			]
 		},
 		{
+			"description": "fn + H;    to     Move cursor by word left, right",
+			"manipulators": [
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "h",
+						"modifiers": {
+							"mandatory": [
+								"fn"
+							],
+							"optional": [
+								"any"
+							]
+						}
+					},
+					"to": [
+						{
+							"key_code": "left_arrow",
+							"modifiers": [
+								"left_alt"
+							]
+						}
+					]
+				},
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "semicolon",
+						"modifiers": {
+							"mandatory": [
+								"fn"
+							],
+							"optional": [
+								"any"
+							]
+						}
+					},
+					"to": [
+						{
+							"key_code": "right_arrow",
+							"modifiers": [
+								"left_alt"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
 			"description": "fn + UO    to     Move to line Start, End",
 			"manipulators": [
 				{
@@ -220,6 +269,9 @@
 							"modifiers": [
 								"left_option"
 							]
+						},
+						{
+							"key_code": "delete_or_backspace"
 						}
 					]
 				},
@@ -242,46 +294,17 @@
 							"modifiers": [
 								"left_option"
 							]
+						},
+						{
+							"key_code": "delete_forward"
 						}
 					]
 				}
 			]
 		},
 		{
-			"description": "fn + /,.   to     Delete line full, Start, End",
+			"description": "fn + ,.    to     Delete line Start, End",
 			"manipulators": [
-				{
-					"type": "basic",
-					"from": {
-						"key_code": "slash",
-						"modifiers": {
-							"mandatory": [
-								"fn"
-							],
-							"optional": [
-								"any"
-							]
-						}
-					},
-					"to": [
-						{
-							"key_code": "right_arrow",
-							"modifiers": [
-								"command"
-							]
-						},
-						{
-							"key_code": "left_arrow",
-							"modifiers": [
-								"command",
-								"left_shift"
-							]
-						},
-						{
-							"key_code": "delete_or_backspace"
-						}
-					]
-				},
 				{
 					"type": "basic",
 					"from": {
