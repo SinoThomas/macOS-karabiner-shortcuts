@@ -358,9 +358,6 @@
                         {
                             "key_code": "delete_or_backspace",
                             "modifiers": ["left_option"]
-                        },
-                        {
-                            "key_code": "delete_or_backspace"
                         }
                     ]
                 },
@@ -377,9 +374,6 @@
                         {
                             "key_code": "delete_forward",
                             "modifiers": ["left_option"]
-                        },
-                        {
-                            "key_code": "delete_forward"
                         }
                     ]
                 }
