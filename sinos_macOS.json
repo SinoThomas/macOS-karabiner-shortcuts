@@ -21,8 +21,27 @@
 			]
 		},
 		{
-			"description": "fn + D     to     Backspace",
+			"description": "fn + SD    to     Backspace, Delete",
 			"manipulators": [
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "s",
+						"modifiers": {
+							"mandatory": [
+								"fn"
+							],
+							"optional": [
+								"any"
+							]
+						}
+					},
+					"to": [
+						{
+							"key_code": "delete_or_backspace"
+						}
+					]
+				},
 				{
 					"type": "basic",
 					"from": {
@@ -38,7 +57,7 @@
 					},
 					"to": [
 						{
-							"key_code": "delete_or_backspace"
+							"key_code": "delete_forward"
 						}
 					]
 				}
@@ -262,7 +281,8 @@
 						{
 							"key_code": "left_arrow",
 							"modifiers": [
-								"left_alt","left_shift"
+								"left_alt",
+								"left_shift"
 							]
 						}
 					]
@@ -307,7 +327,8 @@
 						{
 							"key_code": "right_arrow",
 							"modifiers": [
-								"left_alt","left_shift"
+								"left_alt",
+								"left_shift"
 							]
 						}
 					]
