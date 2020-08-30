@@ -423,6 +423,62 @@
             ]
         },
         {
+            "description": "fn + /     to     Delete line full (with <- + Shift)",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "slash",
+                        "modifiers": {
+                            "mandatory": ["fn"],
+                            "optional": ["any"]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "right_arrow",
+                            "modifiers": ["command"]
+                        },
+                        {
+                            "key_code": "left_arrow",
+                            "modifiers": ["command", "shift"]
+                        },
+                        {
+                            "key_code": "delete_or_backspace"
+                        },
+                        {
+                            "key_code": "delete_or_backspace"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "fn + /     to     Delete line full (with CMD + Backspace)",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "slash",
+                        "modifiers": {
+                            "mandatory": ["fn"],
+                            "optional": ["any"]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "right_arrow",
+                            "modifiers": ["command"]
+                        },
+                        {
+                            "key_code": "delete_or_backspace",
+                            "modifiers": ["command"]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "description": "fn + F     to     Open Finder",
             "manipulators": [
                 {
