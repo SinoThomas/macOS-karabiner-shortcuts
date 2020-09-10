@@ -76,6 +76,26 @@
             ]
         },
         {
+            "description": "fn + W     to     ESC",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "w",
+                        "modifiers": {
+                            "mandatory": ["fn"],
+                            "optional": ["any"]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "escape"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "description": "fn + JKIL  to     Arrow Keys with Cmd as Shift",
             "manipulators": [
                 {
