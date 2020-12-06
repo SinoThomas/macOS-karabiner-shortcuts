@@ -5,7 +5,7 @@
     "import_url": "karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/SinoThomas/macOS-karabiner-shortcuts/master/sinos_macOS.json",
     "rules": [
         {
-            "description": "CapsLock   to     fn",
+            "description": "CapsLock         to     fn",
             "manipulators": [
                 {
                     "type": "basic",
@@ -21,7 +21,7 @@
             ]
         },
         {
-            "description": "fn + S    to     Backspace",
+            "description": "fn + S           to     Backspace",
             "manipulators": [
                 {
                     "type": "basic",
@@ -41,7 +41,7 @@
             ]
         },
         {
-            "description": "fn + D    to     Delete",
+            "description": "fn + D           to     Delete",
             "manipulators": [
                 {
                     "type": "basic",
@@ -61,7 +61,7 @@
             ]
         },
         {
-            "description": "fn + E     to     Enter",
+            "description": "fn + E           to     Enter",
             "manipulators": [
                 {
                     "type": "basic",
@@ -81,7 +81,7 @@
             ]
         },
         {
-            "description": "fn + W     to     ESC",
+            "description": "fn + W           to     ESC",
             "manipulators": [
                 {
                     "type": "basic",
@@ -101,24 +101,8 @@
             ]
         },
         {
-            "description": "fn + JKIL  to     Arrow Keys with Cmd as Shift",
+            "description": "fn + JKIL        to     Arrow Keys (with Cmd as Shift)",
             "manipulators": [
-                {
-                    "type": "basic",
-                    "from": {
-                        "key_code": "j",
-                        "modifiers": {
-                            "mandatory": ["fn", "command"],
-                            "optional": ["any"]
-                        }
-                    },
-                    "to": [
-                        {
-                            "key_code": "left_arrow",
-                            "modifiers": ["left_shift"]
-                        }
-                    ]
-                },
                 {
                     "type": "basic",
                     "from": {
@@ -137,7 +121,7 @@
                 {
                     "type": "basic",
                     "from": {
-                        "key_code": "k",
+                        "key_code": "j",
                         "modifiers": {
                             "mandatory": ["fn", "command"],
                             "optional": ["any"]
@@ -145,7 +129,7 @@
                     },
                     "to": [
                         {
-                            "key_code": "down_arrow",
+                            "key_code": "left_arrow",
                             "modifiers": ["left_shift"]
                         }
                     ]
@@ -168,7 +152,7 @@
                 {
                     "type": "basic",
                     "from": {
-                        "key_code": "i",
+                        "key_code": "k",
                         "modifiers": {
                             "mandatory": ["fn", "command"],
                             "optional": ["any"]
@@ -176,7 +160,7 @@
                     },
                     "to": [
                         {
-                            "key_code": "up_arrow",
+                            "key_code": "down_arrow",
                             "modifiers": ["left_shift"]
                         }
                     ]
@@ -199,7 +183,7 @@
                 {
                     "type": "basic",
                     "from": {
-                        "key_code": "l",
+                        "key_code": "i",
                         "modifiers": {
                             "mandatory": ["fn", "command"],
                             "optional": ["any"]
@@ -207,7 +191,7 @@
                     },
                     "to": [
                         {
-                            "key_code": "right_arrow",
+                            "key_code": "up_arrow",
                             "modifiers": ["left_shift"]
                         }
                     ]
@@ -226,11 +210,27 @@
                             "key_code": "right_arrow"
                         }
                     ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "l",
+                        "modifiers": {
+                            "mandatory": ["fn", "command"],
+                            "optional": ["any"]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "right_arrow",
+                            "modifiers": ["left_shift"]
+                        }
+                    ]
                 }
             ]
         },
         {
-            "description": "fn + H;    to     Move cursor by word left, right with Cmd as Shift",
+            "description": "fn + H;          to     Move cursor by word left, right (with Cmd as Shift)",
             "manipulators": [
                 {
                     "type": "basic",
@@ -299,7 +299,7 @@
             ]
         },
         {
-            "description": "fn + UO    to     Move to line Start, End with Cmd as Shift",
+            "description": "fn + UO          to     Move to line Start, End (with Cmd as Shift)",
             "manipulators": [
                 {
                     "type": "basic",
@@ -368,7 +368,7 @@
             ]
         },
         {
-            "description": "fn + NM    to     Delete Words",
+            "description": "fn + NM          to     Delete Words",
             "manipulators": [
                 {
                     "type": "basic",
@@ -405,7 +405,7 @@
             ]
         },
         {
-            "description": "fn + ,.    to     Delete line Start, End",
+            "description": "fn + ,.          to     Delete line Start, End",
             "manipulators": [
                 {
                     "type": "basic",
@@ -448,7 +448,7 @@
             ]
         },
         {
-            "description": "fn + /     to     Delete line full (with <- + Shift)",
+            "description": "fn + /           to     Delete line full (with <- + Shift)",
             "manipulators": [
                 {
                     "type": "basic",
@@ -479,7 +479,7 @@
             ]
         },
         {
-            "description": "fn + /     to     Delete line full (with CMD + Backspace)",
+            "description": "fn + /           to     Delete line full (with CMD + Backspace)",
             "manipulators": [
                 {
                     "type": "basic",
@@ -504,7 +504,7 @@
             ]
         },
         {
-            "description": "fn + F     to     Open Finder",
+            "description": "fn + F           to     Open Finder",
             "manipulators": [
                 {
                     "type": "basic",
@@ -523,7 +523,7 @@
             ]
         },
         {
-            "description": "fn + T     to     Open Terminal",
+            "description": "fn + T           to     Open Terminal",
             "manipulators": [
                 {
                     "type": "basic",
@@ -542,7 +542,7 @@
             ]
         },
         {
-            "description": "fn + C     to     Open New Google Chrome",
+            "description": "fn + C           to     Open New Google Chrome",
             "manipulators": [
                 {
                     "type": "basic",
@@ -561,7 +561,7 @@
             ]
         },
         {
-            "description": "fn + Shift + C to     Open New Google Chrome App",
+            "description": "fn + Shift + C   to     Open New Google Chrome App",
             "manipulators": [
                 {
                     "type": "basic",
