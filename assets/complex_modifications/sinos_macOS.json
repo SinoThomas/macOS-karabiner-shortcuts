@@ -523,7 +523,7 @@
             ]
         },
         {
-            "description": "fn + T           to     Open Terminal",
+            "description": "fn + T           to     Open Hyper or Terminal",
             "manipulators": [
                 {
                     "type": "basic",
@@ -535,7 +535,7 @@
                     },
                     "to": [
                         {
-                            "shell_command": "open -a 'terminal'"
+                            "shell_command": "open -a 'Hyper' || open -a 'terminal'"
                         }
                     ]
                 }
