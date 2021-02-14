@@ -1,6 +1,6 @@
 # IntelliJ project files
+.DS_Store
 .idea
 *.iml
-.DS_Store
+
 karabiner.json
-automatic_backups
