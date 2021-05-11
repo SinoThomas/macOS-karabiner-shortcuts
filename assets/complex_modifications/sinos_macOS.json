@@ -5,7 +5,7 @@
     "import_url": "karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/SinoThomas/macOS-karabiner-shortcuts/master/sinos_macOS.json",
     "rules": [
         {
-            "description": "CapsLock         to     fn",
+            "description": "CapsLock    to     fn",
             "manipulators": [
                 {
                     "type": "basic",
@@ -21,7 +21,7 @@
             ]
         },
         {
-            "description": "fn + S           to     Backspace",
+            "description": "Fn + S              Backspace",
             "manipulators": [
                 {
                     "type": "basic",
@@ -41,7 +41,7 @@
             ]
         },
         {
-            "description": "fn + D           to     Delete",
+            "description": "Fn + D              Delete",
             "manipulators": [
                 {
                     "type": "basic",
@@ -61,7 +61,7 @@
             ]
         },
         {
-            "description": "fn + E           to     Enter",
+            "description": "Fn + E              Enter",
             "manipulators": [
                 {
                     "type": "basic",
@@ -81,7 +81,7 @@
             ]
         },
         {
-            "description": "fn + W           to     ESC",
+            "description": "Fn + W              ESC",
             "manipulators": [
                 {
                     "type": "basic",
@@ -101,7 +101,7 @@
             ]
         },
         {
-            "description": "fn + JKIL        to     Arrow Keys (with Cmd as Shift)",
+            "description": "Fn + JKIL           Arrow Keys (with Cmd as Shift)",
             "manipulators": [
                 {
                     "type": "basic",
@@ -230,7 +230,7 @@
             ]
         },
         {
-            "description": "fn + H;          to     Move cursor by word left, right (with Cmd as Shift)",
+            "description": "Fn + H;             Move cursor by word left, right (with Cmd as Shift)",
             "manipulators": [
                 {
                     "type": "basic",
@@ -299,7 +299,7 @@
             ]
         },
         {
-            "description": "fn + UO          to     Move to line Start, End (with Cmd as Shift)",
+            "description": "Fn + UO             Move->line Start, End (with Cmd as Shift)",
             "manipulators": [
                 {
                     "type": "basic",
@@ -368,7 +368,7 @@
             ]
         },
         {
-            "description": "fn + NM          to     Delete Words",
+            "description": "Fn + NM             Delete Words",
             "manipulators": [
                 {
                     "type": "basic",
@@ -405,7 +405,7 @@
             ]
         },
         {
-            "description": "fn + ,.          to     Delete line Start, End",
+            "description": "Fn + ,.             Delete line Start, End",
             "manipulators": [
                 {
                     "type": "basic",
@@ -448,7 +448,7 @@
             ]
         },
         {
-            "description": "fn + /           to     Delete line full (with <- + Shift)",
+            "description": "Fn + /              Delete line full (with <- + Shift)",
             "manipulators": [
                 {
                     "type": "basic",
@@ -479,7 +479,7 @@
             ]
         },
         {
-            "description": "fn + /           to     Delete line full (with CMD + Backspace)",
+            "description": "Fn + /              Delete line full (with CMD + Backspace)",
             "manipulators": [
                 {
                     "type": "basic",
@@ -504,7 +504,7 @@
             ]
         },
         {
-            "description": "fn + F           to     Open Finder",
+            "description": "Fn + F              Open Finder",
             "manipulators": [
                 {
                     "type": "basic",
@@ -523,7 +523,7 @@
             ]
         },
         {
-            "description": "fn + T           to     Open Hyper or Terminal",
+            "description": "Fn + T              Open Terminal",
             "manipulators": [
                 {
                     "type": "basic",
@@ -535,14 +535,14 @@
                     },
                     "to": [
                         {
-                            "shell_command": "open -a 'Hyper' || open -a 'terminal'"
+                            "shell_command": "open -a 'terminal'"
                         }
                     ]
                 }
             ]
         },
         {
-            "description": "fn + C           to     Open New Google Chrome Tab",
+            "description": "Fn + C              Open New Google Chrome Tab",
             "manipulators": [
                 {
                     "type": "basic",
@@ -561,7 +561,7 @@
             ]
         },
         {
-            "description": "fn + Shift + C   to     Open New Google Chrome App",
+            "description": "Fn + Shift + C      Open New Google Chrome App",
             "manipulators": [
                 {
                     "type": "basic",
