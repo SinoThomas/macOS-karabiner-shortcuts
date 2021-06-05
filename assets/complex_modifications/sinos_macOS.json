@@ -557,6 +557,36 @@
             ]
         },
         {
+            "description": "Fn + X              Open Firefox Developer Edition",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "modifiers": { "mandatory": ["fn"] },
+                        "key_code": "x"
+                    },
+                    "to": [
+                        { "shell_command": "open -a 'Firefox Developer Edition'" }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Fn + C              Open Google Chrome",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "modifiers": { "mandatory": ["fn"] },
+                        "key_code": "c"
+                    },
+                    "to": [
+                        { "shell_command": "open -a 'Google Chrome'" }
+                    ]
+                }
+            ]
+        },
+        {
             "description": "Fn + Shift + Z      Open New Safari App",
             "manipulators": [
                 {
@@ -574,21 +604,6 @@
             ]
         },
         {
-            "description": "Fn + X              Open Firefox Developer Edition",
-            "manipulators": [
-                {
-                    "type": "basic",
-                    "from": {
-                        "modifiers": { "mandatory": ["fn"] },
-                        "key_code": "x"
-                    },
-                    "to": [
-                        { "shell_command": "open -a 'Firefox Developer Edition'" }
-                    ]
-                }
-            ]
-        },
-        {
             "description": "Fn + Shift + X      Open New Firefox Developer App",
             "manipulators": [
                 {
@@ -601,21 +616,6 @@
                         {
                             "shell_command": "open -a 'Firefox Developer Edition' --new"
                         }
-                    ]
-                }
-            ]
-        },
-        {
-            "description": "Fn + C              Open Google Chrome",
-            "manipulators": [
-                {
-                    "type": "basic",
-                    "from": {
-                        "modifiers": { "mandatory": ["fn"] },
-                        "key_code": "c"
-                    },
-                    "to": [
-                        { "shell_command": "open -a 'Google Chrome'" }
                     ]
                 }
             ]
