@@ -5,17 +5,6 @@
   "import_url": "karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/SinoThomas/macOS-karabiner-shortcuts/master/sinos_mac_utilities.json",
   "rules": [
     {
-      "description": "CapsLock    to     fn",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": { "key_code": "caps_lock" },
-          "to": [{ "key_code": "fn" }]
-        }
-      ]
-    },
-
-    {
       "description": "Fn + S              Backspace",
       "manipulators": [
         {
