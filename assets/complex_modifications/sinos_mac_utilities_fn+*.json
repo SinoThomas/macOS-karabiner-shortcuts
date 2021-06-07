@@ -1,5 +1,5 @@
 {
-  "title": "Sino's mac utilities",
+  "title": "Sino's mac utilities with fn + *",
   "maintainers": ["sino"],
   "homepage": "https://github.com/SinoThomas/macOS-karabiner-shortcuts",
   "import_url": "karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/SinoThomas/macOS-karabiner-shortcuts/master/sinos_mac_utilities.json",
@@ -102,7 +102,7 @@
       ]
     },
     {
-      "description": "Fn + H;             Move cursor by word left, right (with Cmd as Shift)",
+      "description": "Fn + H;             Move cursor by word, left & right (with Cmd as Shift)",
       "manipulators": [
         {
           "type": "basic",
@@ -154,6 +154,7 @@
         }
       ]
     },
+      
     {
       "description": "Fn + NM             Delete Words",
       "manipulators": [
@@ -182,21 +183,6 @@
           "from": { "key_code": "period", "modifiers": { "mandatory": ["fn"], "optional": ["any"] } },
           "to": [
             { "key_code": "right_arrow", "modifiers": ["command", "shift"] },
-            { "key_code": "delete_or_backspace" }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "Fn + /              Delete line full (with <- + Shift)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": { "key_code": "slash", "modifiers": { "mandatory": ["fn"], "optional": ["any"] } },
-          "to": [
-            { "key_code": "right_arrow", "modifiers": ["command"] },
-            { "key_code": "left_arrow", "modifiers": ["command", "shift"] },
-            { "key_code": "delete_or_backspace" },
             { "key_code": "delete_or_backspace" }
           ]
         }
