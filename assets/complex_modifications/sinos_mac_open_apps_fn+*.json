@@ -1,88 +1,160 @@
 {
-  "title": "Sino's mac open apps with fn + *",
-  "maintainers": ["sino"],
-  "homepage": "https://github.com/SinoThomas/macOS-karabiner-shortcuts",
-  "import_url": "karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/SinoThomas/macOS-karabiner-shortcuts/master/sinos_mac_open_apps.json",
-  "rules": [
-    {
-      "description": "Fn + F              Open Finder",
-      "manipulators": [
+    "title": "Sino's mac open apps with fn + *",
+    "maintainers": ["sino"],
+    "homepage": "https://github.com/SinoThomas/macOS-karabiner-shortcuts",
+    "import_url": "karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/SinoThomas/macOS-karabiner-shortcuts/master/sinos_mac_open_apps.json",
+    "rules": [
         {
-          "type": "basic",
-          "from": { "key_code": "f", "modifiers": { "mandatory": ["fn"] } },
-          "to": [{ "shell_command": "open -a 'finder'" }]
-        }
-      ]
-    },
-    {
-      "description": "Fn + T              Open Terminal",
-      "manipulators": [
+            "description": "Fn + F              Open Finder",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "f",
+                        "modifiers": {
+                            "mandatory": ["fn"]
+                        }
+                    },
+                    "to": [
+                        {
+                            "shell_command": "open -a 'finder'"
+                        }
+                    ]
+                }
+            ]
+        },
         {
-          "type": "basic",
-          "from": { "key_code": "t", "modifiers": { "mandatory": ["fn"] } },
-          "to": [{ "shell_command": "open -a 'terminal'" }]
-        }
-      ]
-    },
-    {
-      "description": "Fn + C              Open Google Chrome",
-      "manipulators": [
+            "description": "Fn + G              Open Fork",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "g",
+                        "modifiers": {
+                            "mandatory": ["fn"]
+                        }
+                    },
+                    "to": [
+                        {
+                            "shell_command": "open -a 'Fork'"
+                        }
+                    ]
+                }
+            ]
+        },
         {
-          "type": "basic",
-          "from": { "key_code": "c", "modifiers": { "mandatory": ["fn"] } },
-          "to": [{ "shell_command": "open -a 'Google Chrome'" }]
-        }
-      ]
-    },
-    {
-      "description": "Fn + X              Open Firefox Developer Edition",
-      "manipulators": [
+            "description": "Fn + T              Open Terminal",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "t",
+                        "modifiers": {
+                            "mandatory": ["fn"]
+                        }
+                    },
+                    "to": [
+                        {
+                            "shell_command": "open -a 'terminal'"
+                        }
+                    ]
+                }
+            ]
+        },
         {
-          "type": "basic",
-          "from": { "key_code": "x", "modifiers": { "mandatory": ["fn"] } },
-          "to": [{ "shell_command": "open -a 'Firefox Developer Edition'" }]
-        }
-      ]
-    },
-    {
-      "description": "Fn + Z              Open Figma",
-      "manipulators": [
+            "description": "Fn + Z              Open Figma",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "z",
+                        "modifiers": {
+                            "mandatory": ["fn"]
+                        }
+                    },
+                    "to": [
+                        {
+                            "shell_command": "open -a 'Figma'"
+                        }
+                    ]
+                }
+            ]
+        }, 
         {
-          "type": "basic",
-          "from": { "key_code": "z", "modifiers": { "mandatory": ["fn"] } },
-          "to": [{ "shell_command": "open -a 'Figma'" }]
-        }
-      ]
-    },
-    {
-      "description": "Fn + V              Open Intellij Idea",
-      "manipulators": [
+            "description": "Fn + X              Open Google Chrome",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "x",
+                        "modifiers": {
+                            "mandatory": ["fn"]
+                        }
+                    },
+                    "to": [
+                        {
+                            "shell_command": "open -a 'Google Chrome'"
+                        }
+                    ]
+                }
+            ]
+        },
         {
-          "type": "basic",
-          "from": { "key_code": "v", "modifiers": { "mandatory": ["fn"] } },
-          "to": [{ "shell_command": "open -a 'Intellij Idea'" }]
-        }
-      ]
-    },
-    {
-      "description": "Fn + B              Open Visual Studio Code",
-      "manipulators": [
+            "description": "Fn + C              Open Firefox Developer Edition",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "c",
+                        "modifiers": {
+                            "mandatory": ["fn"]
+                        }
+                    },
+                    "to": [
+                        {
+                            "shell_command": "open -a 'Firefox Developer Edition'"
+                        }
+                    ]
+                }
+            ]
+        },
         {
-          "type": "basic",
-          "from": { "key_code": "b", "modifiers": { "mandatory": ["fn"] } },
-          "to": [{ "shell_command": "open -a 'Visual Studio Code'" }]
-        }
-      ]
-    },
-    {
-      "description": "Fn + G              Open Fork",
-      "manipulators": [
+            "description": "Fn + V              Open Intellij Idea",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "v",
+                        "modifiers": {
+                            "mandatory": ["fn"]
+                        }
+                    },
+                    "to": [
+                        {
+                            "shell_command": "open -a 'Intellij Idea'"
+                        }
+                    ]
+                }
+            ]
+        },
         {
-          "type": "basic",
-          "from": { "key_code": "g", "modifiers": { "mandatory": ["fn"] } },
-          "to": [{ "shell_command": "open -a 'Fork'" }]
+            "description": "Fn + B              Open Visual Studio Code",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "b",
+                        "modifiers": {
+                            "mandatory": ["fn"]
+                        }
+                    },
+                    "to": [
+                        {
+                            "shell_command": "open -a 'Visual Studio Code'"
+                        }
+                    ]
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }
