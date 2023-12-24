@@ -1,0 +1,11 @@
+{
+  "name": "karabiner-custom-modifications",
+  "version": "1.0.0",
+  "description": "Custom Karabiner Shortcuts for macOS",
+  "scripts": {},
+  "author": "Sino Thomas",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.1.1"
+  }
+}
