@@ -43,7 +43,7 @@
             ]
         },
         {
-            "description": "Fn + T              Open Terminal",
+            "description": "Fn + T              Open Terminal (Default)",
             "manipulators": [
                 {
                     "type": "basic",
@@ -56,6 +56,25 @@
                     "to": [
                         {
                             "shell_command": "open -a 'terminal'"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Fn + T              Open Terminal (Kitty)",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "t",
+                        "modifiers": {
+                            "mandatory": ["fn"]
+                        }
+                    },
+                    "to": [
+                        {
+                            "shell_command": "open -a 'Kitty'"
                         }
                     ]
                 }
@@ -169,7 +188,7 @@
                     },
                     "to": [
                         {
-                            "shell_command": "open -a 'Intellij Idea'"
+                            "shell_command": "open -a 'IntelliJ IDEA Ultimate'  "
                         }
                     ]
                 }
