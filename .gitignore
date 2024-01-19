@@ -3,6 +3,6 @@
 .idea
 *.iml
 
-karabiner.json
+#karabiner.json
 /automatic_backups/
 node_modules
