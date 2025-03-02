@@ -755,27 +755,6 @@
                         ]
                     },
                     {
-                        "description": "Fn + T              Open Terminal (Kitty)",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "t",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "fn"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "shell_command": "open -a 'Kitty'"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "Fn + Enter          Capslock",
                         "manipulators": [
                             {
@@ -800,7 +779,7 @@
                         ]
                     },
                     {
-                        "description": "Fn + F              Open Finder with open ~/Downloads",
+                        "description": "Fn + F              Open Finder with open -a 'finder'",
                         "manipulators": [
                             {
                                 "from": {
@@ -813,7 +792,28 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open ~/Downloads"
+                                        "shell_command": "open -a 'finder'"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Fn + T              Open Terminal (Warp)",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "t",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "fn"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open -a 'Warp'"
                                     }
                                 ],
                                 "type": "basic"
