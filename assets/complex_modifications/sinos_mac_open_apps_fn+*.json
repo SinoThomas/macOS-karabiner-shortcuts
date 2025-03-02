@@ -81,6 +81,25 @@
             ]
         },
         {
+            "description": "Fn + CMD + T        Open Terminal (Default)",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "t",
+                        "modifiers": {
+                            "mandatory": ["fn" , "command"]
+                        }
+                    },
+                    "to": [
+                        {
+                            "shell_command": "open -a 'terminal'"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "description": "Fn + T              Open Terminal (Kitty)",
             "manipulators": [
                 {
@@ -94,6 +113,44 @@
                     "to": [
                         {
                             "shell_command": "open -a 'Kitty'"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Fn + CMD + T        Open Terminal (Kitty)",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "t",
+                        "modifiers": {
+                            "mandatory": ["fn" , "command"]
+                        }
+                    },
+                    "to": [
+                        {
+                            "shell_command": "open -a 'Kitty'"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Fn + T              Open Terminal (Warp)",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "t",
+                        "modifiers": {
+                            "mandatory": ["fn"]
+                        }
+                    },
+                    "to": [
+                        {
+                            "shell_command": "open -a 'Warp'"
                         }
                     ]
                 }

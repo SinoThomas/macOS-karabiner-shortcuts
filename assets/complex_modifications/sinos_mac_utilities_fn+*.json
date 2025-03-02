@@ -199,6 +199,19 @@
           ]
         }
       ]
+    },
+    {
+      "description": "Fn + /              Delete line full (with CMD + Backspace)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": { "key_code": "slash", "modifiers": { "mandatory": ["fn"], "optional": ["any"] } },
+          "to": [
+            { "key_code": "right_arrow", "modifiers": ["command"] },
+            { "key_code": "delete_or_backspace", "modifiers": ["command"] }
+          ]
+        }
+      ]
     }
   ]
 }
