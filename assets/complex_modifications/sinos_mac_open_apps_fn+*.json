@@ -10,7 +10,44 @@
         {
           "type": "basic",
           "from": { "key_code": "f", "modifiers": { "mandatory": ["fn"] } },
-          "to": [{ "shell_command": "open -a 'finder'" }]
+          "to": [{ "shell_command": "open -a 'Finder'" }]
+        }
+      ]
+    },
+    {
+      "description": "Fn + F              Open Finder with open -a 'finder' then Open tab",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": { "key_code": "f", "modifiers": { "mandatory": ["fn"] } },
+          "to": [{ "set_variable": { "name": "fn-f", "value": 1 } }, { "shell_command": "open -a 'Finder'" }],
+          "to_delayed_action": {
+            "to_if_invoked": [
+              { "set_variable": { "name": "fn-f", "value": 0 } },
+              { "key_code": "t", "modifiers": ["command"] }
+            ],
+            "to_if_canceled": [{ "set_variable": { "name": "fn-f", "value": 0 } }]
+          },
+          "parameters": { "basic.to_delayed_action_delay_milliseconds": 300 }
+        }
+      ]
+    },
+    {
+      "description": "Fn + F              Open Finder with open -a 'finder' then Open=>Close tab",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": { "key_code": "f", "modifiers": { "mandatory": ["fn"] } },
+          "to": [{ "set_variable": { "name": "fn-f", "value": 1 } }, { "shell_command": "open -a 'Finder'" }],
+          "to_delayed_action": {
+            "to_if_invoked": [
+              { "set_variable": { "name": "fn-f", "value": 0 } },
+              { "key_code": "t", "modifiers": ["command"] },
+              { "key_code": "w", "modifiers": ["command"] }
+            ],
+            "to_if_canceled": [{ "set_variable": { "name": "fn-f", "value": 0 } }]
+          },
+          "parameters": { "basic.to_delayed_action_delay_milliseconds": 300 }
         }
       ]
     },
@@ -24,6 +61,7 @@
         }
       ]
     },
+
     {
       "description": "Fn + G              Open Fork",
       "manipulators": [
@@ -34,6 +72,7 @@
         }
       ]
     },
+
     {
       "description": "Fn + T              Open Terminal (Default)",
       "manipulators": [
@@ -85,6 +124,17 @@
       ]
     },
     {
+      "description": "Fn + CMD + T        Open Terminal (Warp)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": { "key_code": "t", "modifiers": { "mandatory": ["fn", "command"] } },
+          "to": [{ "shell_command": "open -a 'Warp'" }]
+        }
+      ]
+    },
+
+    {
       "description": "Fn + Z              Open Figma",
       "manipulators": [
         {
@@ -94,6 +144,7 @@
         }
       ]
     },
+
     {
       "description": "Fn + C              Open Google Chrome",
       "manipulators": [
@@ -134,6 +185,7 @@
         }
       ]
     },
+
     {
       "description": "Fn + V              Open Intellij Idea",
       "manipulators": [

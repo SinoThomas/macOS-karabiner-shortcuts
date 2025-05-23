@@ -35,6 +35,16 @@
       ]
     },
     {
+      "description": "Fn + Shift + Option + Z      Open New Safari App",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": { "modifiers": { "mandatory": ["fn", "left_shift", "left_option"] }, "key_code": "z" },
+          "to": [{ "shell_command": "open -a 'Safari' --new" }]
+        }
+      ]
+    },
+    {
       "description": "Fn + Shift + O      Open Opera",
       "manipulators": [
         {
@@ -95,6 +105,7 @@
         }
       ]
     },
+
     {
       "description": "Fn + Shift + F      Open Figma",
       "manipulators": [
@@ -102,17 +113,6 @@
           "type": "basic",
           "from": { "modifiers": { "mandatory": ["fn", "left_shift"] }, "key_code": "f" },
           "to": [{ "shell_command": "open -a 'Figma'" }]
-        }
-      ]
-    },
-
-    {
-      "description": "Fn + Shift + Option + Z      Open New Safari App",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": { "modifiers": { "mandatory": ["fn", "left_shift", "left_option"] }, "key_code": "z" },
-          "to": [{ "shell_command": "open -a 'Safari' --new" }]
         }
       ]
     }

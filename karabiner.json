@@ -5,27 +5,151 @@
             "complex_modifications": {
                 "rules": [
                     {
-                        "description": "Fn + CMD + T        Open Terminal (Default)",
+                        "description": "Fn + Space              Mouse Right Click",
+                        "enabled": false,
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "spacebar",
+                                    "modifiers": {
+                                        "mandatory": ["fn"],
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [{ "pointing_button": "button2" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Fn + CMD + T        Open Terminal (Warp)",
                         "manipulators": [
                             {
                                 "from": {
                                     "key_code": "t",
                                     "modifiers": { "mandatory": ["fn", "command"] }
                                 },
-                                "to": [{ "shell_command": "open -a 'terminal'" }],
+                                "to": [{ "shell_command": "open -a 'Warp'" }],
                                 "type": "basic"
                             }
                         ]
                     },
                     {
-                        "description": "Fn + G              Open Fork",
+                        "description": "Fn + T              Open Terminal (Kitty)",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "g",
+                                    "key_code": "t",
                                     "modifiers": { "mandatory": ["fn"] }
                                 },
-                                "to": [{ "shell_command": "open -a 'Fork'" }],
+                                "to": [{ "shell_command": "open -a 'Kitty'" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Fn + F              Open Finder with open -a 'finder'",
+                        "enabled": false,
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "f",
+                                    "modifiers": { "mandatory": ["fn"] }
+                                },
+                                "to": [{ "shell_command": "open -a 'Finder'" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Fn + F              Open Finder with open -a 'finder' then Open tab",
+                        "enabled": false,
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "f",
+                                    "modifiers": { "mandatory": ["fn"] }
+                                },
+                                "parameters": { "basic.to_delayed_action_delay_milliseconds": 100 },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "command-q",
+                                            "value": 1
+                                        }
+                                    },
+                                    { "shell_command": "open -a 'Finder'" }
+                                ],
+                                "to_delayed_action": {
+                                    "to_if_canceled": [
+                                        {
+                                            "set_variable": {
+                                                "name": "command-q",
+                                                "value": 0
+                                            }
+                                        }
+                                    ],
+                                    "to_if_invoked": [
+                                        {
+                                            "set_variable": {
+                                                "name": "command-q",
+                                                "value": 0
+                                            }
+                                        },
+                                        {
+                                            "key_code": "t",
+                                            "modifiers": ["command"]
+                                        }
+                                    ]
+                                },
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Fn + F              Open Finder with open -a 'finder' then Open=>Close tab",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "f",
+                                    "modifiers": { "mandatory": ["fn"] }
+                                },
+                                "parameters": { "basic.to_delayed_action_delay_milliseconds": 300 },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "fn-f",
+                                            "value": 1
+                                        }
+                                    },
+                                    { "shell_command": "open -a 'Finder'" }
+                                ],
+                                "to_delayed_action": {
+                                    "to_if_canceled": [
+                                        {
+                                            "set_variable": {
+                                                "name": "fn-f",
+                                                "value": 0
+                                            }
+                                        }
+                                    ],
+                                    "to_if_invoked": [
+                                        {
+                                            "set_variable": {
+                                                "name": "fn-f",
+                                                "value": 0
+                                            }
+                                        },
+                                        {
+                                            "key_code": "t",
+                                            "modifiers": ["command"]
+                                        },
+                                        {
+                                            "key_code": "w",
+                                            "modifiers": ["command"]
+                                        }
+                                    ]
+                                },
                                 "type": "basic"
                             }
                         ]
@@ -39,6 +163,19 @@
                                     "modifiers": { "mandatory": ["fn"] }
                                 },
                                 "to": [{ "shell_command": "open -a 'IntelliJ IDEA Ultimate'  " }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Fn + G              Open Fork",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "g",
+                                    "modifiers": { "mandatory": ["fn"] }
+                                },
+                                "to": [{ "shell_command": "open -a 'Fork'" }],
                                 "type": "basic"
                             }
                         ]
@@ -538,32 +675,6 @@
                                     }
                                 },
                                 "to": [{ "key_code": "caps_lock" }],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Fn + T              Open Terminal (Warp)",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "t",
-                                    "modifiers": { "mandatory": ["fn"] }
-                                },
-                                "to": [{ "shell_command": "open -a 'Warp'" }],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Fn + F              Open Finder with open ~/Downloads",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "f",
-                                    "modifiers": { "mandatory": ["fn"] }
-                                },
-                                "to": [{ "shell_command": "open ~/Downloads" }],
                                 "type": "basic"
                             }
                         ]
