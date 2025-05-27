@@ -135,6 +135,29 @@
     },
 
     {
+      "description": "Fn + CMD + P       Toggle PIA Connection",
+      "manipulators": [
+        {
+          "type": "basic",
+          "conditions": [{ "type": "variable_if", "name": "piactl connected", "value": true }],
+          "from": { "key_code": "p", "modifiers": { "mandatory": ["fn", "command"] } },
+          "to": [
+            { "shell_command": "/usr/local/bin/piactl disconnect" },
+            { "set_variable": { "name": "piactl connected", "value": false } }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": { "key_code": "p", "modifiers": { "mandatory": ["fn", "command"] } },
+          "to": [
+            { "shell_command": "/usr/local/bin/piactl connect" },
+            { "set_variable": { "name": "piactl connected", "value": true } }
+          ]
+        }
+      ]
+    },
+
+    {
       "description": "Fn + Z              Open Figma",
       "manipulators": [
         {

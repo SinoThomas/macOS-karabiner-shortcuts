@@ -5,6 +5,50 @@
             "complex_modifications": {
                 "rules": [
                     {
+                        "description": "Fn + CMD + P       Toggle PIA Connection",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "piactl connected",
+                                        "type": "variable_if",
+                                        "value": true
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "p",
+                                    "modifiers": { "mandatory": ["fn", "command"] }
+                                },
+                                "to": [
+                                    { "shell_command": "/usr/local/bin/piactl disconnect" },
+                                    {
+                                        "set_variable": {
+                                            "name": "piactl connected",
+                                            "value": false
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "p",
+                                    "modifiers": { "mandatory": ["fn", "command"] }
+                                },
+                                "to": [
+                                    { "shell_command": "/usr/local/bin/piactl connect" },
+                                    {
+                                        "set_variable": {
+                                            "name": "piactl connected",
+                                            "value": true
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Fn + Space              Mouse Right Click",
                         "enabled": false,
                         "manipulators": [
