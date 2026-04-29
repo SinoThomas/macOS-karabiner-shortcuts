@@ -5,7 +5,7 @@
   "import_url": "karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/SinoThomas/macOS-karabiner-shortcuts/master/sinos_mac_open_apps.json",
   "rules": [
     {
-      "description": "Fn + Shift + C      Open Google Chrome",
+      "description": "Fn + Shift + C            Open Google Chrome",
       "manipulators": [
         {
           "type": "basic",
@@ -15,7 +15,7 @@
       ]
     },
     {
-      "description": "Fn + Shift + X      Open Firefox Developer Edition",
+      "description": "Fn + Shift + X            Open Firefox Developer Edition",
       "manipulators": [
         {
           "type": "basic",
@@ -25,7 +25,7 @@
       ]
     },
     {
-      "description": "Fn + Shift + S      Open Safari",
+      "description": "Fn + Shift + S            Open Safari",
       "manipulators": [
         {
           "type": "basic",
@@ -35,7 +35,7 @@
       ]
     },
     {
-      "description": "Fn + Shift + Option + Z      Open New Safari App",
+      "description": "Fn + Shift + Option + Z   Open New Safari App",
       "manipulators": [
         {
           "type": "basic",
@@ -45,7 +45,7 @@
       ]
     },
     {
-      "description": "Fn + Shift + O      Open Opera",
+      "description": "Fn + Shift + O            Open Opera",
       "manipulators": [
         {
           "type": "basic",
@@ -55,7 +55,7 @@
       ]
     },
     {
-      "description": "Fn + Shift + B      Open Brave Browser",
+      "description": "Fn + Shift + B            Open Brave Browser",
       "manipulators": [
         {
           "type": "basic",
@@ -65,7 +65,7 @@
       ]
     },
     {
-      "description": "Fn + Shift + E      Open Microsoft Edge",
+      "description": "Fn + Shift + E            Open Microsoft Edge",
       "manipulators": [
         {
           "type": "basic",
@@ -76,7 +76,7 @@
     },
 
     {
-      "description": "Fn + Shift + D      Open Intellij Idea",
+      "description": "Fn + Shift + D            Open Intellij Idea",
       "manipulators": [
         {
           "type": "basic",
@@ -86,7 +86,7 @@
       ]
     },
     {
-      "description": "Fn + Shift + I      Open Intellij Idea",
+      "description": "Fn + Shift + I            Open Intellij Idea",
       "manipulators": [
         {
           "type": "basic",
@@ -96,7 +96,7 @@
       ]
     },
     {
-      "description": "Fn + Shift + V      Open Visual Studio Code",
+      "description": "Fn + Shift + V            Open Visual Studio Code",
       "manipulators": [
         {
           "type": "basic",
@@ -107,7 +107,7 @@
     },
 
     {
-      "description": "Fn + Shift + F      Open Figma",
+      "description": "Fn + Shift + F            Open Figma",
       "manipulators": [
         {
           "type": "basic",

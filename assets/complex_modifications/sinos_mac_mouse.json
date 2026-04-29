@@ -1,0 +1,62 @@
+{
+  "title": "Sino's mac utilities with mouse buttons",
+  "maintainers": ["sino"],
+  "homepage": "https://github.com/SinoThomas/macOS-karabiner-shortcuts",
+  "import_url": "karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/SinoThomas/macOS-karabiner-shortcuts/master/sinos_mac_utilities.json",
+  "rules": [
+    {
+      "description": "Mouse Button 4              Cmd [    Back (skip Idea, VSCode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "pointing_button": "button4"
+          },
+          "to": [
+            {
+              "key_code": "open_bracket",
+              "modifiers": ["left_command"]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^com\\.jetbrains\\.intellij$",
+                "^com\\.jetbrains\\.intellij-EAP$",
+                "^com\\.microsoft\\.VSCode$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Mouse Button 5              Cmd ]    Forward (skip Idea, VSCode)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "pointing_button": "button5"
+          },
+          "to": [
+            {
+              "key_code": "close_bracket",
+              "modifiers": ["left_command"]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^com\\.jetbrains\\.intellij$",
+                "^com\\.jetbrains\\.intellij-EAP$",
+                "^com\\.microsoft\\.VSCode$"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
