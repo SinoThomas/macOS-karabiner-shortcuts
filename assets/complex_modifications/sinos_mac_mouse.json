@@ -5,7 +5,7 @@
   "import_url": "karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/SinoThomas/macOS-karabiner-shortcuts/master/sinos_mac_utilities.json",
   "rules": [
     {
-      "description": "Mouse Button 4              Cmd [    Back (skip Idea, VSCode)",
+      "description": "Mouse Button 4            Cmd [    Back (skip Idea, VSCode)",
       "manipulators": [
         {
           "type": "basic",
@@ -25,7 +25,7 @@
       ]
     },
     {
-      "description": "Mouse Button 5              Cmd ]    Forward (skip Idea, VSCode)",
+      "description": "Mouse Button 5            Cmd ]    Forward (skip Idea, VSCode)",
       "manipulators": [
         {
           "type": "basic",
@@ -45,12 +45,13 @@
       ]
     },
     {
-      "description": "Mouse Button 6 + [1,2]        Ctrl [LeftArrow,RightArrow]      [Previous,Next] Desktop",
+      "description": "Mouse Button 6 + [1,2]    Ctrl [LeftArrow,RightArrow]      [Previous,Next] Desktop; Button 6 alone Ctrl UpArrow Mission Control",
       "manipulators": [
         {
           "type": "basic",
           "from": { "pointing_button": "button6" },
           "to": [{ "set_variable": { "name": "mouse_button6_held", "value": 1 } }],
+          "to_if_alone": [{ "key_code": "up_arrow", "modifiers": ["left_control"] }],
           "to_after_key_up": [{ "set_variable": { "name": "mouse_button6_held", "value": 0 } }]
         },
         {

@@ -5,7 +5,7 @@
             "complex_modifications": {
                 "rules": [
                     {
-                        "description": "Mouse Button 6 + [1,2]        Ctrl [LeftArrow,RightArrow]      [Previous,Next] Desktop",
+                        "description": "Mouse Button 6 + [1,2]    Ctrl [LeftArrow,RightArrow]      [Previous,Next] Desktop; Button 6 alone Ctrl UpArrow Mission Control",
                         "manipulators": [
                             {
                                 "from": { "pointing_button": "button6" },
@@ -23,6 +23,12 @@
                                             "name": "mouse_button6_held",
                                             "value": 0
                                         }
+                                    }
+                                ],
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "up_arrow",
+                                        "modifiers": ["left_control"]
                                     }
                                 ],
                                 "type": "basic"
