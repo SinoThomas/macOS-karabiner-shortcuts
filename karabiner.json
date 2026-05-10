@@ -225,27 +225,14 @@
                         ]
                     },
                     {
-                        "description": "Fn + T              Open Terminal (Kitty)",
+                        "description": "Fn + T              Open Terminal (Default)",
                         "manipulators": [
                             {
                                 "from": {
                                     "key_code": "t",
                                     "modifiers": { "mandatory": ["fn"] }
                                 },
-                                "to": [{ "shell_command": "open -a 'Kitty'" }],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Fn + V              Open Intellij Idea",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "v",
-                                    "modifiers": { "mandatory": ["fn"] }
-                                },
-                                "to": [{ "shell_command": "open -a 'IntelliJ IDEA'" }],
+                                "to": [{ "shell_command": "open -a 'terminal'" }],
                                 "type": "basic"
                             }
                         ]
@@ -259,6 +246,19 @@
                                     "modifiers": { "mandatory": ["fn"] }
                                 },
                                 "to": [{ "shell_command": "open -a 'Fork'" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Fn + V              Open Intellij Idea",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "v",
+                                    "modifiers": { "mandatory": ["fn"] }
+                                },
+                                "to": [{ "shell_command": "open -a 'IntelliJ IDEA.app'" }],
                                 "type": "basic"
                             }
                         ]

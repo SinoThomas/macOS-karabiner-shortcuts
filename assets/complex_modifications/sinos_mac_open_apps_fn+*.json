@@ -109,7 +109,7 @@
         {
           "type": "basic",
           "from": { "key_code": "v", "modifiers": { "mandatory": ["fn"] } },
-          "to": [{ "shell_command": "open -a 'IntelliJ IDEA Ultimate'  " }]
+          "to": [{ "shell_command": "open -a 'IntelliJ IDEA.app'" }]
         }
       ]
     },
