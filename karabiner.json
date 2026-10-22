@@ -5,6 +5,76 @@
             "complex_modifications": {
                 "rules": [
                     {
+                        "description": "Toggle Menu Bar     F10 Double-tap",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "f10_double_tap",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "f10",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "to": [
+                                    { "shell_command": "osascript -e 'tell application \"System Events\" to tell dock preferences to set autohide menu bar to not (autohide menu bar)'" },
+                                    {
+                                        "set_variable": {
+                                            "name": "f10_double_tap",
+                                            "value": 0
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "f10_double_tap",
+                                        "type": "variable_unless",
+                                        "value": 1
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "f10",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "parameters": { "basic.to_delayed_action_delay_milliseconds": 500 },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "f10_double_tap",
+                                            "value": 1
+                                        }
+                                    },
+                                    { "key_code": "f10" }
+                                ],
+                                "to_delayed_action": {
+                                    "to_if_canceled": [
+                                        {
+                                            "set_variable": {
+                                                "name": "f10_double_tap",
+                                                "value": 0
+                                            }
+                                        }
+                                    ],
+                                    "to_if_invoked": [
+                                        {
+                                            "set_variable": {
+                                                "name": "f10_double_tap",
+                                                "value": 0
+                                            }
+                                        }
+                                    ]
+                                },
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Fn + A              Open Google Chrome",
                         "manipulators": [
                             {

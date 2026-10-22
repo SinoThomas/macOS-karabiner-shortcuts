@@ -16,6 +16,44 @@
     },
 
     {
+      "description": "Toggle Menu Bar     F10",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": { "key_code": "f10" },
+          "to": [{"shell_command": "osascript -e 'tell application \"System Events\" to tell dock preferences to set autohide menu bar to not (autohide menu bar)'"}]
+        }
+      ]
+    },
+    {
+      "description": "Toggle Menu Bar     F10 Double-tap",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": { "key_code": "f10", "modifiers": { "optional": ["any"] } },
+          "to": [
+            {
+              "shell_command": "osascript -e 'tell application \"System Events\" to tell dock preferences to set autohide menu bar to not (autohide menu bar)'"
+            },
+            { "set_variable": { "name": "f10_double_tap", "value": 0 } }
+          ],
+          "conditions": [{ "type": "variable_if", "name": "f10_double_tap", "value": 1 }]
+        },
+        {
+          "type": "basic",
+          "from": { "key_code": "f10", "modifiers": { "optional": ["any"] } },
+          "to": [{ "set_variable": { "name": "f10_double_tap", "value": 1 } }, { "key_code": "f10" }],
+          "to_delayed_action": {
+            "to_if_invoked": [{ "set_variable": { "name": "f10_double_tap", "value": 0 } }],
+            "to_if_canceled": [{ "set_variable": { "name": "f10_double_tap", "value": 0 } }]
+          },
+          "parameters": { "basic.to_delayed_action_delay_milliseconds": 500 },
+          "conditions": [{ "type": "variable_unless", "name": "f10_double_tap", "value": 1 }]
+        }
+      ]
+    },
+
+    {
       "description": "Fn + S              Backspace",
       "manipulators": [
         {
