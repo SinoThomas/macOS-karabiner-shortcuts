@@ -5,6 +5,162 @@
             "complex_modifications": {
                 "rules": [
                     {
+                        "description": "Fn + 0      Run Command: openProj 0",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "0",
+                                    "modifiers": { "mandatory": ["fn"] }
+                                },
+                                "to": [{ "shell_command": "~/-/openProjects.sh --key 0" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Fn + 1      Run Command: openProj 1",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "1",
+                                    "modifiers": { "mandatory": ["fn"] }
+                                },
+                                "to": [{ "shell_command": "~/-/openProjects.sh --key 1" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Fn + 2      Run Command: openProj 2",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "2",
+                                    "modifiers": { "mandatory": ["fn"] }
+                                },
+                                "to": [{ "shell_command": "~/-/openProjects.sh --key 2" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Fn + 3      Run Command: openProj 3",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "3",
+                                    "modifiers": { "mandatory": ["fn"] }
+                                },
+                                "to": [{ "shell_command": "~/-/openProjects.sh --key 3" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Fn + 4      Run Command: openProj 4",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "4",
+                                    "modifiers": { "mandatory": ["fn"] }
+                                },
+                                "to": [{ "shell_command": "~/-/openProjects.sh --key 4" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Fn + 5      Run Command: openProj 5",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "5",
+                                    "modifiers": { "mandatory": ["fn"] }
+                                },
+                                "to": [{ "shell_command": "~/-/openProjects.sh --key 5" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Fn + 6      Run Command: openProj 6",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "6",
+                                    "modifiers": { "mandatory": ["fn"] }
+                                },
+                                "to": [{ "shell_command": "~/-/openProjects.sh --key 6" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Fn + 7      Run Command: openProj 7",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "7",
+                                    "modifiers": { "mandatory": ["fn"] }
+                                },
+                                "to": [{ "shell_command": "~/-/openProjects.sh --key 7" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Fn + 8      Run Command: openProj 8",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "8",
+                                    "modifiers": { "mandatory": ["fn"] }
+                                },
+                                "to": [{ "shell_command": "~/-/openProjects.sh --key 8" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Fn + 9      Run Command: openProj 9",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "9",
+                                    "modifiers": { "mandatory": ["fn"] }
+                                },
+                                "to": [{ "shell_command": "~/-/openProjects.sh --key 9" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Fn + -      Run Command: openProj -",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "hyphen",
+                                    "modifiers": { "mandatory": ["fn"] }
+                                },
+                                "to": [{ "shell_command": "~/-/openProjects.sh --key -" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Fn + =      Run Command: openProj =",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "equal_sign",
+                                    "modifiers": { "mandatory": ["fn"] }
+                                },
+                                "to": [{ "shell_command": "~/-/openProjects.sh --key =" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Toggle Menu Bar     F10 Double-tap",
                         "manipulators": [
                             {
