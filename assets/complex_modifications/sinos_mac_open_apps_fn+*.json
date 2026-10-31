@@ -247,7 +247,7 @@
           "from": { "key_code": "m", "modifiers": { "mandatory": ["fn", "command"] } },
           "to": [
             {
-              "shell_command": "cd /Users/sinothomas/Development/Projects/cli-commands && /Users/sinothomas/.volta/bin/node manga host"
+              "shell_command": "cd /Users/sinothomas/ws/projects/cli-commands && /Users/sinothomas/.volta/bin/node manga host"
             },
             { "set_variable": { "name": "manga host command ran", "value": true } }
           ]
