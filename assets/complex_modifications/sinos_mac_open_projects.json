@@ -15,64 +15,64 @@
     {
       "description": "Fn + 1      Run Command: openProj 1",
       "manipulators": [{
-        "type": "basic", 
-        "from": { "key_code": "1", "modifiers": { "mandatory": ["fn"] } }, 
+        "type": "basic",
+        "from": { "key_code": "1", "modifiers": { "mandatory": ["fn"] } },
         "to": [{ "shell_command": "~/-/openProjects.sh --key 1" }]
       }]
     },
     {
       "description": "Fn + 2      Run Command: openProj 2",
       "manipulators": [{
-        "type": "basic", 
-        "from": { "key_code": "2", "modifiers": { "mandatory": ["fn"] } }, 
+        "type": "basic",
+        "from": { "key_code": "2", "modifiers": { "mandatory": ["fn"] } },
         "to": [{ "shell_command": "~/-/openProjects.sh --key 2" }]
       }]
     },
     {
       "description": "Fn + 3      Run Command: openProj 3",
       "manipulators": [{
-        "type": "basic", 
-        "from": { "key_code": "3", "modifiers": { "mandatory": ["fn"] } }, 
+        "type": "basic",
+        "from": { "key_code": "3", "modifiers": { "mandatory": ["fn"] } },
         "to": [{ "shell_command": "~/-/openProjects.sh --key 3" }]
       }]
     },
     {
       "description": "Fn + 4      Run Command: openProj 4",
       "manipulators": [{
-        "type": "basic", 
-        "from": { "key_code": "4", "modifiers": { "mandatory": ["fn"] } }, 
+        "type": "basic",
+        "from": { "key_code": "4", "modifiers": { "mandatory": ["fn"] } },
         "to": [{ "shell_command": "~/-/openProjects.sh --key 4" }]
       }]
     },
     {
-      "description": "Fn + 5      Run Command: openProj 5", 
+      "description": "Fn + 5      Run Command: openProj 5",
       "manipulators": [{
-        "type": "basic", 
-        "from": { "key_code": "5", "modifiers": { "mandatory": ["fn"] } }, 
+        "type": "basic",
+        "from": { "key_code": "5", "modifiers": { "mandatory": ["fn"] } },
         "to": [{ "shell_command": "~/-/openProjects.sh --key 5" }]
       }]
     },
     {
       "description": "Fn + 6      Run Command: openProj 6",
       "manipulators": [{
-        "type": "basic", 
-        "from": { "key_code": "6", "modifiers": { "mandatory": ["fn"] } }, 
+        "type": "basic",
+        "from": { "key_code": "6", "modifiers": { "mandatory": ["fn"] } },
         "to": [{ "shell_command": "~/-/openProjects.sh --key 6" }]
       }]
     },
     {
       "description": "Fn + 7      Run Command: openProj 7",
       "manipulators": [{
-        "type": "basic", 
-        "from": { "key_code": "7", "modifiers": { "mandatory": ["fn"] } }, 
+        "type": "basic",
+        "from": { "key_code": "7", "modifiers": { "mandatory": ["fn"] } },
         "to": [{ "shell_command": "~/-/openProjects.sh --key 7" }]
       }]
     },
     {
       "description": "Fn + 8      Run Command: openProj 8",
       "manipulators": [{
-        "type": "basic", 
-        "from": { "key_code": "8", "modifiers": { "mandatory": ["fn"] } }, 
+        "type": "basic",
+        "from": { "key_code": "8", "modifiers": { "mandatory": ["fn"] } },
         "to": [{ "shell_command": "~/-/openProjects.sh --key 8" }]
       }]
     },
@@ -98,6 +98,106 @@
         "type": "basic",
         "from": { "key_code": "equal_sign", "modifiers": { "mandatory": ["fn"] } },
         "to": [{ "shell_command": "~/-/openProjects.sh --key =" }]
+      }]
+    },
+
+
+
+
+    {
+      "description": "Fn + CMD + 0      Run Command: openProj 0",
+      "manipulators": [{
+        "type": "basic",
+        "from": { "key_code": "0", "modifiers": { "mandatory": ["fn", "command"] } },
+        "to": [{ "shell_command": "~/-/openProjects.sh --key cmd 0" }]
+      }]
+    },
+    {
+      "description": "Fn + CMD + 1      Run Command: openProj 1",
+      "manipulators": [{
+        "type": "basic",
+        "from": { "key_code": "1", "modifiers": { "mandatory": ["fn", "command"] } },
+        "to": [{ "shell_command": "~/-/openProjects.sh --key cmd 1" }]
+      }]
+    },
+    {
+      "description": "Fn + CMD + 2      Run Command: openProj 2",
+      "manipulators": [{
+        "type": "basic",
+        "from": { "key_code": "2", "modifiers": { "mandatory": ["fn", "command"] } },
+        "to": [{ "shell_command": "~/-/openProjects.sh --key cmd 2" }]
+      }]
+    },
+    {
+      "description": "Fn + CMD + 3      Run Command: openProj 3",
+      "manipulators": [{
+        "type": "basic",
+        "from": { "key_code": "3", "modifiers": { "mandatory": ["fn", "command"] } },
+        "to": [{ "shell_command": "~/-/openProjects.sh --key cmd 3" }]
+      }]
+    },
+    {
+      "description": "Fn + CMD + 4      Run Command: openProj 4",
+      "manipulators": [{
+        "type": "basic",
+        "from": { "key_code": "4", "modifiers": { "mandatory": ["fn", "command"] } },
+        "to": [{ "shell_command": "~/-/openProjects.sh --key cmd 4" }]
+      }]
+    },
+    {
+      "description": "Fn + CMD + 5      Run Command: openProj 5",
+      "manipulators": [{
+        "type": "basic",
+        "from": { "key_code": "5", "modifiers": { "mandatory": ["fn", "command"] } },
+        "to": [{ "shell_command": "~/-/openProjects.sh --key cmd 5" }]
+      }]
+    },
+    {
+      "description": "Fn + CMD + 6      Run Command: openProj 6",
+      "manipulators": [{
+        "type": "basic",
+        "from": { "key_code": "6", "modifiers": { "mandatory": ["fn", "command"] } },
+        "to": [{ "shell_command": "~/-/openProjects.sh --key cmd 6" }]
+      }]
+    },
+    {
+      "description": "Fn + CMD + 7      Run Command: openProj 7",
+      "manipulators": [{
+        "type": "basic",
+        "from": { "key_code": "7", "modifiers": { "mandatory": ["fn", "command"] } },
+        "to": [{ "shell_command": "~/-/openProjects.sh --key cmd 7" }]
+      }]
+    },
+    {
+      "description": "Fn + CMD + 8      Run Command: openProj 8",
+      "manipulators": [{
+        "type": "basic",
+        "from": { "key_code": "8", "modifiers": { "mandatory": ["fn", "command"] } },
+        "to": [{ "shell_command": "~/-/openProjects.sh --key cmd 8" }]
+      }]
+    },
+    {
+      "description": "Fn + CMD + 9      Run Command: openProj 9",
+      "manipulators": [{
+        "type": "basic",
+        "from": { "key_code": "9", "modifiers": { "mandatory": ["fn", "command"] } },
+        "to": [{ "shell_command": "~/-/openProjects.sh --key cmd 9" }]
+      }]
+    },
+    {
+      "description": "Fn + CMD + -      Run Command: openProj -",
+      "manipulators": [{
+        "type": "basic",
+        "from": { "key_code": "hyphen", "modifiers": { "mandatory": ["fn", "command"] } },
+        "to": [{ "shell_command": "~/-/openProjects.sh --key cmd -" }]
+      }]
+    },
+    {
+      "description": "Fn + CMD + =      Run Command: openProj =",
+      "manipulators": [{
+        "type": "basic",
+        "from": { "key_code": "equal_sign", "modifiers": { "mandatory": ["fn", "command"] } },
+        "to": [{ "shell_command": "~/-/openProjects.sh --key cmd =" }]
       }]
     }
   ]
